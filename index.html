@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <title>Login | Online Fashion Store</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="login.css">
+    <link href="https://fonts.googleapis.com/css2?family=Allura&family=Josefin+Sans:wght@100&family" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lovers+Quarrel&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <!--container begins-->
+    <div class="row">
+    <div class="col-md-6 mx-auto p-0">
+        <div class="card">
+            <div class="login-forum">
+                <div class="login-box"> 
+                    <input id="tab-1" type="radio" name="tab" class="sign-in" checked>
+                    <label for="tab-1" class="tab">Login</label> 
+                    <input id="tab-2" type="radio" name="tab" class="sign-up">
+                    <label for="tab-2" class="tab">Sign Up</label>
+                    <div class="login-field">
+                        <form action="./login.php" method="post">
+                            <div class="login">
+                            <div class="group"> 
+                                <label for="user" class="label">Username</label> 
+                                <input id="user" type="text" class="input" placeholder="Enter your username" name="username" required> 
+                            </div>
+                            <div class="group"> 
+                                <label for="pass" class="label">Password</label> 
+                                <input id="pass" type="password" class="input" data-type="password" placeholder="Enter your password" name="password" required> 
+                            </div>
+                            <div class="group"> 
+                                <input id="check" type="checkbox" class="check" checked> 
+                                <label for="check"><span class="icon"></span> Keep me Signed in</label> 
+                            </div>
+                            <div class="group"> 
+                                <button type="submit" class="button">Sign In </button>
+                                </div>
+                            <div class="hr"></div>
+                            <div class="foot"> <a href="#">Forgot Password?</a> </div>
+                        </div>
+                        </form>
+
+                        <form action="./register.php" method="post">
+                            <div class="sign-up-form">
+                            <div class="group"> 
+                                <label for="name" class="label">Name</label> 
+                                <input id="name" type="text" class="input" placeholder="Enter your name" name="name" required> 
+                            </div>
+                            <div class="group"> 
+                                <label for="username" class="label">Username</label> 
+                                <input id="username" type="text" class="input" data-type="password" placeholder="Enter your username" name="username" required> 
+                            </div>
+                            <div class="group"> 
+                                <label for="password" class="label">Password</label> 
+                                <input id="password" type="password" class="input" data-type="password" placeholder="Create your password" name="password" required> 
+                            </div>
+                            <div class="group"> 
+                                <label for="mail" class="label">Email Address</label> 
+                                <input id="mail" type="mail" class="input" placeholder="Enter your email address" name="email" required> 
+                            </div>
+                            <div class="group"> <input type="submit" class="button" value="Sign Up"> </div>
+                            <div class="hr"></div>
+                            <div class="foot"> <label for="tab-1">Already Member?</label> </div>
+                        </div>
+                            
+
+                        </form>
+                        
+
+
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--js for menu toggle-->
+<script>
+    var MenuItems = document.getElementById("MenuItems");
+
+    MenuItems.style.maxHeight - "0px";
+
+    function menutoggle() {
+        if (MenuItems.style.maxHeight == "0px") 
+        {
+            MenuItems.style.maxHeight = "200px";
+        }
+        else
+        {
+            MenuItems.style.maxHeight = "0px";
+        }
+    }
+</script>
+
+</body>
+
+</html>
+ 
+
